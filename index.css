@@ -1,0 +1,72 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #00704a; /* Change to your desired background color */
+    color: #fff; /* Text color */
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Link color */
+}
+
+.find-store {
+    background-color: #fff; /* Find Store button background color */
+    color: #00704a; /* Find Store button text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('images/example.png'); /* Replace 'example.png' with your image file name and adjust path if needed */
+    background-size: cover; /* Adjust background sizing as needed */
+    background-position: center; /* Adjust background position as needed */
+    /* Add other styles for your hero section here */
+}
+
+/* Links Section Styles */
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f7; /* Links section background color */
+}
+
+.link {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Footer background color */
+    color: #fff; /* Footer text color */
+}
