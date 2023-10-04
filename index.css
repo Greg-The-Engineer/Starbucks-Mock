@@ -15,8 +15,10 @@ header {
     color: #fff; /* Text color */
 }
 
-.logo {
-    font-size: 24px;
+/* Logo Styles */
+.logo img {
+    width: 100px; /* Adjust the desired width for your logo */
+    height: auto;
 }
 
 nav ul {
