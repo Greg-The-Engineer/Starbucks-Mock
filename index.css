@@ -11,7 +11,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #00704a; /* Change to your desired background color */
+    /* background-color: #00704a; Change to your desired background color */
     color: #fff; /* Text color */
 }
 
@@ -27,7 +27,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 400px;
 }
 
 nav ul li a {
@@ -35,93 +35,74 @@ nav ul li a {
     color: #fff; /* Link color */
 }
 
-/* Create an empty div to push elements to the right */
-.header-empty-space {
-    flex-grow: 1;
-}
-
-.find-store {
-    background-color: #fff; /* Find Store button background color */
-    color: #00704a; /* Find Store button text color */
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 10px; /* Add margin to separate from navigation links */
-}
-
-/* Hero Section Styles */
-.hero {
-    background-image: url('images/example.png'); /* Replace 'example.png' with your image file name and adjust path if needed */
-    background-size: cover; /* Adjust background sizing as needed */
-    background-position: center; /* Adjust background position as needed */
-    /* Add other styles for your hero section here */
-}
-
-/* Links Section Styles */
-.links {
+/* Add this CSS to move "Sign In" and "Join Now" to the right */
+.header-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* This keeps your logo and navigation to the left */
     align-items: center;
-    padding: 20px;
-    background-color: #f7f7f7; /* Links section background color */
-}
-
-.link {
-    font-size: 16px;
-    cursor: pointer;
-}
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333; /* Footer background color */
-    color: #fff; /* Footer text color */
-}
-
-/* CSS for the Separator Line */
-.separator {
-    border: 4px solid #ccc; /* Lighter gray border color and increased thickness */
-    margin: 20px 0; /* Adjust margin spacing as needed */
 }
 
 /* Style for "Sign In" and "Join Now" buttons */
+.sign-in, .join-now {
+    margin-left: auto; /* Move these buttons to the rightmost end */
+}
+
 .sign-in a, .join-now a {
     text-decoration: none;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 50%; /* Make the buttons circular */
     background-color: #00704a; /* Button background color */
+    display: inline-block; /* Display the buttons in a line */
 }
 
-/* Style for "Find a Store" link */
-.find-store a {
-    text-decoration: none;
-    color: #fff;
+/* Add this CSS to push "Sign In" and "Join Now" to the rightmost end */
+.header-empty-space {
+    flex-grow: 1;
 }
-/* Additional CSS for the new square section */
+
+/* CSS for the Separator Line */
+.separator {
+    border: 2px solid #ccc; /* Lighter gray border color and increased thickness */
+    margin: 20px 0; /* Adjust margin spacing as needed */
+}
+
+/* Additional CSS for the square section */
 .square-section {
-    background-color: #76232f; /* Background color */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #166305; /* Background color */
     color: #fff; /* Text color */
-    width: 600px; /* Adjust the width as needed */
     padding: 20px; /* Add padding for spacing */
-    text-align: center; /* Center-align the text */
-    display: inline-block; /* Make it an inline-block element */
-    vertical-align: top; /* Align to the top of the image */
-}
-
-/* Style for the text within the square */
-.square-section p {
-    font-size: 16px;
-    line-height: 1.5;
 }
 
 .square {
-    background-color: #76232f; /* Square background color */
+    background-color: #166305; /* Square background color */
     color: #fff; /* Text color */
-    width: 600px; /* Adjust the width as needed */
+    width: 60%; /* Adjust the width as needed */
     padding: 20px; /* Adjust padding as needed */
-    margin: 0 auto; /* Center the square horizontally */
-    text-align: center; /* Center text within the square */
-    font-size: 16px;
+    text-align: center; /* Center-align the text */
+    font-size: 24px;
 }
+
+.left-image {
+    float: left; /* Align the image to the left */
+    margin-right: 10px; /* Add some spacing to the right of the image */
+}
+
+.right-image {
+    width: 50%; /* Adjust the width of the image as needed */
+    height: auto;
+}
+
+/* Additional CSS for the right square */
+.right-square {
+    background-color: #76232f; /* Background color */
+    color: #fff; /* Text color */
+    width: 1500px; /* Adjust the width as needed */
+    height: 510px; 
+    text-align: center; /* Center-align the text */
+    font-size: 18px;
+}
+
